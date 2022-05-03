@@ -1,0 +1,200 @@
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("fonts/Gilroy-Bold.woff");
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("fonts/Gilroy-Medium.woff");
+}
+
+/****************** Top level ******************/
+* {
+  font-family: "Gilroy-Medium";
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div {
+  display: flex;
+}
+
+h1 {
+  font-family: "Gilroy-Bold";
+  font-size: 34px;
+  color: #070707;
+  padding: 34px 0;
+}
+
+/****************** Main layout ******************/
+.disclaimer {
+  position: sticky;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  background: #fdd;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.container {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  background: #fff;
+}
+
+.container:nth-of-type(even) {
+  background: #f6f6f6;
+}
+
+/****************** Box ******************/
+.box {
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 60px;
+  width: 80%;
+}
+
+/****************** Navigation ******************/
+.navigation {
+  justify-content: space-between;
+  width: 80%;
+  margin: 2rem 0;
+}
+
+.navigation__item {
+  font-family: "Gilroy-Bold";
+  color: #828282;
+}
+
+.navigation__item_active {
+  color: #070707;
+}
+
+.divider {
+  border-top: 1px solid #828282;
+  width: 100%;
+  height: 0px;
+}
+
+/****************** Header ******************/
+.user-title {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.user-title__name {
+  font-family: "Gilroy-Bold";
+  font-size: 48px;
+  width: 150px;
+  /* margin: 30px 0; */
+}
+
+.user-title__summary {
+  padding-top: 2rem;
+}
+
+.user-title__lang {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  /* justify-content: center; */
+}
+
+.user-title__lang-item {
+  font-family: "Gilroy-Bold";
+  font-size: 16px;
+  color: #828282;
+}
+.user-title__lang-item_active {
+  color: #070707;
+}
+.user-photo {
+  width: 100%;
+}
+
+/****************** About ******************/
+.text {
+  padding-bottom: 34px;
+}
+
+.description {
+  text-align: center;
+}
+
+/****************** Skills ******************/
+.skill-box {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.skill-box__item {
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-box__icon {
+  width: 90px;
+  height: 90px;
+}
+
+.skill-box__name {
+  flex-grow: 1;
+  font-family: "Gilroy-Bold";
+  font-size: 14px;
+  color: #828282;
+  padding: 1rem 0;
+}
+
+.skill-box__stars {
+  width: 140px;
+  justify-content: space-between;
+}
+
+/****************** Portfolio ******************/
+.portfolio-item {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 480px;
+  padding-bottom: 5rem;
+}
+
+.portfolio-img {
+  width: 100%;
+}
+
+/****************** Contacts ******************/
+.button {
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 42px;
+  border-radius: 21px;
+  background-color: #070707;
+  color: #fff;
+}
+
+.button__text {
+  font-family: "Gilroy-Bold";
+}
+
+.socials-box {
+  justify-content: space-between;
+  width: 650px;
+  padding: 6rem 0 3rem 0;
+}
+
+.socials-text {
+  font-size: 14px;
+  color: #828282;
+}
